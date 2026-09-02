@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niranjan Vignesh S.K. — Portfolio</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-dark: #0F172A; /* Clear high-contrast dark color */
+            --text-muted: #475569;
+            --accent-blue: #2563EB;
+            --border-color: #E2E8F0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        header { background: var(--card-bg); padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); margin-bottom: 2rem; position: relative; overflow: hidden; }
+        header::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--accent-blue); }
+        
+        h1 { font-size: 2.5rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+        .subtitle { font-size: 1.15rem; color: var(--accent-blue); font-weight: 600; margin-bottom: 1.5rem; }
+        
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; font-family: 'Space Mono', monospace; font-size: 0.9rem; }
+        .contact-item { color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; }
+        .contact-item a { color: var(--accent-blue); text-decoration: none; }
+        .contact-item a:hover { text-decoration: underline; }
+
+        section { background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); margin-bottom: 1.5rem; }
+        h2 { font-size: 1.4rem; color: var(--text-dark); margin-bottom: 1.25rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--bg-color); }
+        
+        .edu-item, .exp-item, .project-item { margin-bottom: 1.5rem; }
+        .flex-between { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; }
+        h3 { font-size: 1.15rem; color: var(--text-dark); font-weight: 600; }
+        .date-badge { font-family: 'Space Mono', monospace; font-size: 0.85rem; background: var(--bg-color); padding: 0.2rem 0.6rem; border-radius: 4px; color: var(--text-muted); border: 1px solid var(--border-color); }
+        .institution, .organization { color: var(--text-muted); font-weight: 500; margin-bottom: 0.25rem; }
+        
+        .score-highlight { display: inline-block; background: #EFF6FF; color: var(--accent-blue); padding: 0.25rem 0.75rem; border-radius: 6px; font-weight: 600; font-size: 0.95rem; margin-top: 0.5rem; border: 1px solid #DBEAFE; }
+        .skills-container { display: flex; flex-direction: column; gap: 1rem; }
+        .skill-group { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+        .skill-label { font-weight: 600; min-width: 100px; color: var(--text-muted); }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .tag { font-family: 'Space Mono', monospace; font-size: 0.85rem; background: var(--bg-color); color: var(--text-dark); padding: 0.3rem 0.75rem; border-radius: 6px; border: 1px solid var(--border-color); }
+        p { color: var(--text-muted); }
+        .bullet-list { margin-top: 0.5rem; padding-left: 1.25rem; color: var(--text-muted); }
+        footer { text-align: center; padding: 2rem 0; color: var(--text-muted); font-size: 0.85rem; font-family: 'Space Mono', monospace; }
+
+        @media (max-width: 600px) {
+            header, section { padding: 1.5rem; }
+            h1 { font-size: 2rem; }
+            .skill-group { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Niranjan Vignesh S.K.</h1>
+        <div class="subtitle">Computer Science & Engineering Student</div>
+        <div class="contact-grid">
+            <div class="contact-item">📞 +91 63746 45576</div>
+            <div class="contact-item">✉️ <a href="mailto:NiranjanVignesh6363@gmail.com">NiranjanVignesh6363@gmail.com</a></div>
+            <div class="contact-item">📍 Pollachi, Tamil Nadu</div>
+        </div>
+    </header>
+
+    <section id="objective">
+        <h2>Objective</h2>
+        <p>To start my career as a fresher in a reputed organization, where I can utilize my knowledge and skills, learn new technologies quickly, and contribute honestly to the team's goals and organization's growth.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="edu-item">
+            <div class="flex-between">
+                <h3>B.E. Computer Science & Engineering</h3>
+                <span class="date-badge">2023 – 2027</span>
+            </div>
+            <div class="institution">VSB College of Engineering Technical Campus, Coimbatore</div>
+            <div class="score-highlight">7.50 CGPA (through 6th semester)</div>
+        </div>
+        <div class="edu-item" style="margin-top: 1.5rem;">
+            <div class="flex-between">
+                <h3>Higher Secondary Education (Class XII)</h3>
+                <span class="date-badge">Completed</span>
+            </div>
+            <div class="score-highlight">72% Aggregate</div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-group">
+                <div class="skill-label">Languages:</div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">C++</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Web:</div>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Tools:</div>
+                <div class="tags">
+                    <span class="tag">VS Code</span>
+                    <span class="tag">GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="exp-item">
+            <div class="flex-between">
+                <h3>Web Development Intern</h3>
+                <span class="date-badge">2025</span>
+            </div>
+            <div class="organization">Coz Brain, Bangalore (Remote)</div>
+            <ul class="bullet-list">
+                <li>Worked on web development projects from end to end.</li>
+                <li>Designed responsive front-end structures and modern, highly accessible web pages.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <div class="flex-between">
+                <h3>Personal Portfolio Website</h3>
+                <span class="date-badge">Static Site</span>
+            </div>
+            <p>Designed and built a highly clear, responsive personal portfolio website to showcase my profile, active technical skills, education, and primary contact details in one clean layout.</p>
+        </div>
+    </section>
+
+    <section id="languages">
+        <h2>Spoken Languages</h2>
+        <div class="tags">
+            <span class="tag">Tamil</span>
+            <span class="tag">English</span>
+            <span class="tag">Hindi</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Niranjan Vignesh S.K. · Custom Blueprint Setup</p>
+    </footer>
+</div>
+
+</body>
+</html>
